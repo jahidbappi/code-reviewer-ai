@@ -6,7 +6,6 @@
   },
   "extends": [
     "eslint:recommended",
-    "@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
@@ -34,5 +33,6 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "ignorePatterns": ["dist/", "node_modules/", "*.js"]
 } 
