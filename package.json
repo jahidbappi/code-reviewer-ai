@@ -1,12 +1,42 @@
 {
-  "name": "code-reviewer",
-  "private": true,
-  "version": "0.0.0",
+  "name": "code-reviewer-ai",
+  "version": "1.0.0",
+  "description": "An AI-powered code review application that provides instant feedback and suggestions for your code",
   "type": "module",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "code-review",
+    "ai",
+    "react",
+    "typescript",
+    "gemini",
+    "code-analysis",
+    "developer-tools"
+  ],
+  "author": {
+    "name": "Jahid Bappi",
+    "email": "jahidcric2000@gmail.com",
+    "url": "https://github.com/jahidbappi"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahidbappi/code-reviewer-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jahidbappi/code-reviewer-ai/issues"
+  },
+  "homepage": "https://github.com/jahidbappi/code-reviewer-ai#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -15,7 +45,26 @@
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
